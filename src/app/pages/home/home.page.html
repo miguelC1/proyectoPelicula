@@ -9,7 +9,9 @@
 </ion-header>
 
 <ion-content >
-
+  <div>
+  <ion-label>Accion</ion-label>
+  </div>
 <ion-grid [fixed]="true">
 <ion-row>
 <ion-col>
@@ -24,17 +26,24 @@
 <ion-card color="secondary">
   <img class="imagenes" alt="peli" src="https://hips.hearstapps.com/hmg-prod/images/65-1673968902.jpg">
 
-  <ion-card-content> Card Content </ion-card-content>
+  <ion-card-subtitle class=""> 
+  <div class="ion-content">
+  <ion-label class="ion-center">Card Content</ion-label>
+  </div>
+  
+  </ion-card-subtitle>
 </ion-card>
 
 </ion-col>
 
 <ion-col>
-<ion-card color="tertiary">
-  <img class="imagenes" alt="jhon weet" src="https://as01.epimg.net/epik/imagenes/2019/06/03/portada/1559573314_873311_1559575720_noticia_normal.jpg">
-
-  <ion-card-content> Card Content </ion-card-content>
-</ion-card>
+  <ion-card color="tertiary">
+    <img class="imagenes" alt="jhon weet" src="https://as01.epimg.net/epik/imagenes/2019/06/03/portada/1559573314_873311_1559575720_noticia_normal.jpg">
+    <div>
+   provando el tamaño del div
+    </div>
+    
+  </ion-card>
 </ion-col>
 
 </ion-row>
@@ -44,7 +53,7 @@
 <ion-grid [fixed]="true">
   <ion-row>
     <ion-col>
-      <ion-card color="success">
+      <ion-card color="success" (click)="hacerSolicitudApi()">
         <ion-card-header>
           <ion-card-title>Card Title</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -118,5 +127,6 @@
 
   </ion-row>
 </ion-grid>
+
 
 </ion-content>

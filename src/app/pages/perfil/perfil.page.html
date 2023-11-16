@@ -1,13 +1,87 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
+
+<ion-header>
+  <ion-toolbar color="">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <div class="vertical-padding">
+
+    <div class="ion-text-center">
+      <h4>Miguel Corma</h4>
+    </div>
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="4" class="ion-no-padding position-relative">
+          <ion-button fill="clear" class="button-vertical-align button-left">
+            <ion-icon slot="icon-only" name="chatbubbles"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <img src="https://images.hola.com/us/images/0260-101985aba2b2-22ac48c09176-1000/horizontal-480/luis-miguel.jpg" alt=""
+            class="image-round border-tertiary margin-top">
+        </ion-col>
+        <ion-col size="4" class="ion-no-padding position-relative">
+          <ion-button fill="clear" class="button-vertical-align button-right">
+            <ion-icon slot="icon-only" name="call"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <div class="vertical-padding">
+    <p class="ion-text-center text-profile">
+    ¡Recuerda que cada pequeño paso te acerca a tus grandes sueños! ¡Tú tienes el poder de hacer que cada día cuente
+    </p>
+  </div>
+
+  <div class="ion-padding">
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="6">
+          <strong class="text-tertiary">Website</strong> <br>
+          <small class="text-muted">websis.com</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Email</strong> <br>
+          <small class="text-muted">miguel68933886@gmail.com</small>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <strong class="text-tertiary">Phone</strong> <br>
+          <small class="text-muted">+52 1234567</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Location</strong> <br>
+          <small class="text-muted">Bolivia</small>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <strong class="text-tertiary">Zip code</strong> <br>
+          <small class="text-muted">111111</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Direccion</strong> <br>
+          <small class="text-muted">Av. Petrolera</small>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary" size="small">
+      <ion-icon name="pencil"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

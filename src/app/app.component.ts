@@ -7,19 +7,29 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox',
-      url: '/folder/inbox', 
-      icon: 'mail' 
+    { title: 'Perfil',
+      url: '/perfil', 
+      icon: 'person' 
     },
-    { title: 'Outbox',
-      url: '/folder/outbox', 
-      icon: 'paper-plane' },
+    { title: 'Mas Recientes',
+      url: '/mas-recientes', 
+      icon: 'sparkles' },
     { title: 'Favorites', 
       url: '/folder/favorites', 
       icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
+    { title: 'Archivados', url: '/folder/archived', icon: 'archive' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  
+  usuario={
+    nombre:'Miguel Corma',
+    email:'miguel68933886@gmail.com',
+    favoritos:'historias'
+  }
+
+  peliculas={
+
+  }
+
   constructor(private router: Router) {}
 
   irperfil(){
